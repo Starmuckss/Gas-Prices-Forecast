@@ -21,7 +21,7 @@ class Forecast:
         # Data prep
         prophet_data = pd.DataFrame()
         prophet_data['y'] = self.input_data['motorin']
-        prophet_data['ds'] = self.input_data['Date']
+        prophet_data['ds'] = self.input_data['date']
         
         periods = 3
 
